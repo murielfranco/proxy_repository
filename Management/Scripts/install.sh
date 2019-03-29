@@ -3,6 +3,8 @@ set -e
 
 
 echo "Installing Squid Proxy..."
+
+sudo apt-get install apache2-utils
 sudo DEBIAN_FRONTEND=noninteractive apt-get install squid --yes
 
 # basic configure file
